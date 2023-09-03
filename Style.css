@@ -7,6 +7,11 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 150px 1fr;
     gap: 10px;
+    @media (max-width : 700px ){
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 150px 1fr ;
+    }
 }
 
 #intro{
@@ -17,6 +22,10 @@ body{
     background-color: #89CFF0;
     width: 90%;
     max-height: 150px;
+    @media (max-width : 700px ){
+        position: relative;
+        left: 15px;
+    }
 }
 #fullName{
     position: reltive;
@@ -40,6 +49,9 @@ body{
     padding: 0;
     margin-left: 25px;
     width: fit-content;
+    @media (max-width : 700px ){
+        font-size: 50px;
+    }
 }
 
 #secondName{
@@ -50,6 +62,12 @@ body{
     left: 150px;
     bottom: 15px;
     width: fit-content;
+    @media (max-width : 700px ){
+        font-size: 30px;
+        position: relative;
+        left: 105px;
+        top:5px;
+    }
 }
 
 h3{
@@ -57,6 +75,10 @@ h3{
     font-family: 'Poppins', sans-serif;
     position: relative;
     bottom: 25px; 
+    @media (max-width : 700px ){
+        position: relative;
+        bottom: 0px; 
+    }
 }
 
 img{
@@ -71,6 +93,11 @@ img{
     left:65%;
     bottom: 180px; 
     width: fit-content;
+    @media (max-width : 700px ){
+        position: relative;
+        left:60%;
+        bottom: 140px; 
+    }
 }
 
 #ContactItems{
@@ -89,6 +116,21 @@ i,a{
     position: relative;
     left: 70px;
     width: 75%;
+    @media (max-width : 700px ){
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+        left: -25px;
+        width: 90%;
+    }
+}
+
+#EDUCATIONS hr, #WORKEXPERIENCES hr{
+    display: none;
+    @media (max-width : 700px ){
+        display:block;
+    }
 }
 
 #Profile{
@@ -96,7 +138,6 @@ i,a{
     flex-direction: column;
 }
 #WORKEXPERIENCES{
-   
     text-align: start;
 }
 

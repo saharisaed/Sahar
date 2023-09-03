@@ -1,0 +1,120 @@
+body{
+    background-color: #D4F1F4;
+}
+
+#CV{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr;
+    gap: 10px;
+}
+
+#intro{
+    grid-column: span 4;
+    position: relative;
+    left: 85px;
+    color:black;
+    background-color: #89CFF0;
+    width: 90%;
+    max-height: 150px;
+}
+#fullName{
+    position: reltive;
+    left: 50px;
+    margin: 0;
+}
+#intro::before{
+    content: '';
+    position: absolute;
+    top: 1;
+    left: 100%; 
+    border-top: 75.5px solid transparent;
+    border-bottom: 75.5px solid transparent;
+    border-left: 80px solid #89CFF0; 
+}
+
+#firstName{
+    font-size: 60px;
+    font-family:'Qwitcher Grypen', cursive;
+    margin: 0;
+    padding: 0;
+    margin-left: 25px;
+    width: fit-content;
+}
+
+#secondName{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    position: relative;
+    left: 150px;
+    bottom: 15px;
+    width: fit-content;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    bottom: 25px; 
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+#ContactInfo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left:65%;
+    bottom: 180px; 
+    width: fit-content;
+}
+
+#ContactItems{
+    display: flex;
+}
+
+i,a{
+    margin: 0;
+    margin-top: 5px;
+}
+
+#data{
+    grid-column:  2;
+    display: flex;
+    gap: 60px;
+    position: relative;
+    left: 70px;
+    width: 75%;
+}
+
+#Profile{
+    display: flex;
+    flex-direction: column;
+}
+#WORKEXPERIENCES{
+   
+    text-align: start;
+}
+
+h4,h5{
+    margin: 0;
+}
+
+
+p{
+    width: 300px;
+}
+
+ul{
+    width: 300px;
+    padding: 0;
+    padding-left: 20px;
+}
+
+span{
+    font-weight: bolder;
+}
